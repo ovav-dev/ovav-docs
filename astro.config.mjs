@@ -9,14 +9,11 @@ export default defineConfig({
     starlight({
       title: 'OVAV Docs',
       description: 'OVAV — Professional Development Governance. Complete documentation.',
-      logo: {
-        src: './src/assets/ovav-logo.svg',
-      },
-      social: {
-        github: 'https://github.com/ovav-ai/ovav-docs',
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/ovav-dev/ovav-docs' },
+      ],
       editLink: {
-        baseUrl: 'https://github.com/ovav-ai/ovav-docs/edit/main/',
+        baseUrl: 'https://github.com/ovav-dev/ovav-docs/edit/main/',
       },
       sidebar: [
         {
@@ -32,26 +29,12 @@ export default defineConfig({
           items: [
             { label: 'Architecture', slug: 'core/architecture' },
             { label: 'Professional Profiles', slug: 'core/profiles' },
-            { label: 'Governance Model', slug: 'core/governance' },
-            { label: 'Multi-Model Runtime', slug: 'core/multi-model' },
-          ],
-        },
-        {
-          label: 'Guides',
-          items: [
-            { label: 'First Profile Setup', slug: 'guides/first-profile' },
-            { label: 'Tailor Composer', slug: 'guides/tailor' },
-            { label: 'Vault Encryption', slug: 'guides/vault' },
-            { label: 'cPanel Administration', slug: 'guides/cpanel' },
           ],
         },
         {
           label: 'Reference',
           items: [
-            { label: 'CLI Commands', slug: 'reference/cli' },
-            { label: 'API Reference', slug: 'reference/api' },
             { label: 'Security', slug: 'reference/security' },
-            { label: 'Configuration', slug: 'reference/configuration' },
           ],
         },
       ],
